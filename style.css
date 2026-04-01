@@ -197,6 +197,16 @@ footer {
   margin: 10px 0;
 }
 
+.image-row {
+  display: flex;
+  gap: 12px;
+}
+
+.image-row img {
+  width: 50%;
+  height: auto;
+  border-radius: 12px;
+}
 
 
 
