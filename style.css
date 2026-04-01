@@ -189,7 +189,6 @@ footer {
   .nav-links a { font-size: 0.72rem; }
 }
 
-
 .card-image {
   width: 100%;
   height: auto;
@@ -197,16 +196,13 @@ footer {
   margin: 10px 0;
 }
 
-.image-row {
-  display: flex;
-  gap: 12px;
-}
-
 .image-row img {
-  flex: 1;               /* equal width for all images */
-  aspect-ratio: 1 / 1;   /* ensures height = width */
-  object-fit: cover;      /* fills the square without stretching */
+  flex: 1;                       /* equal width for all cards */
+  aspect-ratio: 1.77 / 1;        /* matches your image ratio */
+  width: 400px;                   /* choose desired width */
+  height: auto;                   /* height adjusts automatically */
+  object-fit: cover;              /* fills card nicely */
   border-radius: 12px;
   border: 1px solid #ddd;
-  background: #fff;       /* in case image has transparent areas */
+  background: #fff;
 }
