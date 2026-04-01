@@ -197,21 +197,16 @@ footer {
   margin: 10px 0;
 }
 
-.image-row img {
-  width: 100%;
-  height: 220px;        /* fixed height */
-  object-fit: contain;  /* preserves full image */
-  background: #fff;     /* fills empty space nicely */
-  border-radius: 12px;
-  border: 1px solid #ddd;
-}
-
 .image-row {
   display: flex;
   gap: 12px;
 }
 
 .image-row img {
-  flex: 1;  /* ensures equal width */
+  flex: 1;               /* equal width for all images */
+  aspect-ratio: 1 / 1;   /* ensures height = width */
+  object-fit: cover;      /* fills the square without stretching */
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background: #fff;       /* in case image has transparent areas */
 }
-
