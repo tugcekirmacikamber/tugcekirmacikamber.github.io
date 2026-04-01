@@ -188,3 +188,17 @@ footer {
   .nav-links { gap: 1rem; }
   .nav-links a { font-size: 0.72rem; }
 }
+
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+
+
+
+
+
+
