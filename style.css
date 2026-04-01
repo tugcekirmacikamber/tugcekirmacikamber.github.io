@@ -190,10 +190,11 @@ footer {
 }
 
 .card-image {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 12px;
   margin: 10px 0;
+  display: block;       /* ensures no extra inline spacing */
 }
 
 .image-row img {
