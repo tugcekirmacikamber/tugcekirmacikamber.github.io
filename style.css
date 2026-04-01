@@ -200,14 +200,9 @@ footer {
 .image-row {
   display: flex;
   gap: 12px;
+  max-width: 600px;   /* adjust this */
+  margin: 0 auto;
 }
-
-.image-row img {
-  width: 50%;
-  height: auto;
-  border-radius: 12px;
-}
-
 
 
 
