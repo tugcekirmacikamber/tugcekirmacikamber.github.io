@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tuğce Kırmacı Kamber</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 200px;
+      gap: 4rem;
+      align-items: start;
+    }
+    .hero-title { font-size: 0.95rem; color: var(--muted); margin-bottom: 1.5rem; }
+    .hero-bio { font-size: 1rem; line-height: 1.8; color: #3a3732; margin-bottom: 2rem; }
+    .hero-links { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.5rem; }
+    .interests { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .hero-photo {
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      background: var(--border);
+      overflow: hidden;
+      border: 3px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-photo-placeholder { font-family: 'Lora', serif; font-size: 2.5rem; color: var(--muted); }
+    @media (max-width: 680px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .hero-photo { width: 120px; height: 120px; order: -1; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-name" href="index.html">Tuğce Kırmacı Kamber</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="cand3.html">CAnD3</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <div class="about-grid">
+      <div>
+        <span class="hero-tag">Political Sociology · Social Movements</span>
+        <h1 class="page-title">Tuğce Kırmacı Kamber</h1>
+        <p class="hero-title">Ph.D. Candidate · Department of Sociology · Western University, Ontario</p>
+        <p class="hero-bio">
+          I study the evolving relationship between protest and state power in contemporary democracies. My research explores how shifts toward far right and authoritarian governance reshape the policing of dissent and influence protest behaviour. I work with quantitative, qualitative, and computational methods, drawing on political sociology and social movement studies, and I am broadly interested in how states manage and respond to collective action.
+        </p>
+        <div class="hero-links">
+          <a class="btn" href="mailto:tkirmaci@uwo.ca">Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/tugcekirmacikamber" target="_blank">LinkedIn</a>
+        </div>
+        <div class="interests">
+          <span class="interest-tag">Political Sociology</span>
+          <span class="interest-tag">Social Inequality &amp; Power</span>
+          <span class="interest-tag">Social Movements</span>
+          <span class="interest-tag">Protest Policing</span>
+          <span class="interest-tag">Work &amp; Occupations</span>
+          <span class="interest-tag">Computational Methods</span>
+        </div>
+      </div>
+      <div>
+        <div class="hero-photo">
+          <!-- To add your photo:
+               1. Upload your photo to an "images" folder in your GitHub repo
+               2. Replace the span below with: <img src="images/profile.jpg" alt="Tuğce Kırmacı Kamber" /> -->
+          <span class="hero-photo-placeholder">TK</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Tuğce Kırmacı Kamber · Western University, Department of Sociology · Hosted on GitHub Pages</p>
+  </footer>
+
+</body>
+</html>

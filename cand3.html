@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAnD3 · Tuğce Kırmacı Kamber</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-intro {
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+      max-width: 620px;
+    }
+    .cand3-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-light);
+      padding: 3px 12px;
+      border-radius: 100px;
+      margin-bottom: 0.75rem;
+    }
+    .cand3-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+      transition: border-color 0.2s;
+    }
+    .cand3-card:hover { border-color: var(--accent); }
+    .cand3-card h3 {
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+    .cand3-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.7; }
+    .cand3-about {
+      background: var(--accent-light);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2.5rem;
+      font-size: 0.88rem;
+      color: var(--accent);
+      line-height: 1.7;
+    }
+    .cand3-about a { color: var(--accent); font-weight: 500; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-name" href="index.html">Tuğce Kırmacı Kamber</a>
+    <ul class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="cand3.html" class="active">CAnD3</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <p class="section-label">Fellowship</p>
+    <h1 class="page-title">CAnD3 Projects</h1>
+
+    <div class="cand3-about">
+      <strong>About CAnD3:</strong> The Consortium on Analytics for Data-Driven Decision-Making (CAnD3) is a pan-Canadian training initiative that prepares researchers to use data science for social good. As a CAnD3 Fellow (2025–2026), I contribute to applied policy research bridging academic sociology and data-driven decision-making.
+      Learn more at <a href="https://cand3.ca" target="_blank">cand3.ca</a>.
+    </div>
+
+    <div class="cand3-card">
+      <span class="cand3-badge">Briefing Note · 2025</span>
+      <h3>Affordable Housing: Solutions for Equitable Access in Ontario</h3>
+      <p>
+        This briefing note examines Ontario's affordable housing crisis through the lens of equity and social policy. Drawing on quantitative data and policy analysis, it identifies structural barriers to housing access and outlines actionable recommendations for expanding equitable housing across urban and suburban communities in Ontario.
+      </p>
+      <!-- When your briefing note is published, add a link below:
+      <a class="card-link" href="LINK_HERE" target="_blank">Read briefing note →</a> -->
+    </div>
+
+    <!-- To add more CAnD3 projects, copy the block below and fill it in:
+
+    <div class="cand3-card">
+      <span class="cand3-badge">Type · Year</span>
+      <h3>Project Title</h3>
+      <p>Project description here.</p>
+      <a class="card-link" href="#" target="_blank">Read more →</a>
+    </div>
+
+    -->
+
+  </main>
+
+  <footer>
+    <p>© 2026 Tuğce Kırmacı Kamber · Western University, Department of Sociology · Hosted on GitHub Pages</p>
+  </footer>
+
+</body>
+</html>

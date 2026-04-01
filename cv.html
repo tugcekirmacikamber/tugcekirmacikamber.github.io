@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV · Tuğce Kırmacı Kamber</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .cv-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+    .cv-section { margin-bottom: 2.5rem; }
+    .cv-section-title {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .cv-item {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .cv-year { font-size: 0.82rem; color: var(--muted); padding-top: 2px; }
+    .cv-item h4 { font-size: 0.95rem; font-weight: 500; margin-bottom: 2px; }
+    .cv-item p { font-size: 0.85rem; color: var(--muted); }
+    @media (max-width: 680px) {
+      .cv-item { grid-template-columns: 1fr; gap: 0.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-name" href="index.html">Tuğce Kırmacı Kamber</a>
+    <ul class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="cv.html" class="active">CV</a></li>
+      <li><a href="cand3.html">CAnD3</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <div class="cv-header">
+      <div>
+        <p class="section-label">Curriculum Vitae</p>
+        <h1 class="page-title">Academic Record</h1>
+      </div>
+      <!-- To link your PDF:
+           1. Upload your CV PDF to a "files" folder in your GitHub repo
+           2. Change href="#" to href="files/CV_Tugce_Kirmaci_Kamber.pdf" -->
+      <a class="btn" href="#" style="margin-top: 1rem; white-space: nowrap;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download CV (PDF)
+      </a>
+    </div>
+
+    <div class="cv-section">
+      <p class="cv-section-title">Education</p>
+      <div class="cv-item">
+        <span class="cv-year">2024 – present</span>
+        <div>
+          <h4>Ph.D. Sociology</h4>
+          <p>Western University Ontario, London, Canada<br>Supervisor: Dr. Howard Ramos</p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <span class="cv-year">2019 – 2021</span>
+        <div>
+          <h4>M.A. Political Science</h4>
+          <p>Sabancı University, Istanbul, Turkey · GPA 3.75/4.00<br>Advisor: Dr. Ateş Ali Altınordu</p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <span class="cv-year">2014 – 2019</span>
+        <div>
+          <h4>B.A. Political Science and International Relations</h4>
+          <p>Boğaziçi University, Istanbul, Turkey · GPA 3.63/4.00<br>Exchange: University of Helsinki, January–May 2018</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <p class="cv-section-title">Funding, Scholarships &amp; Awards</p>
+      <div class="cv-item">
+        <span class="cv-year">2025–2026</span>
+        <div>
+          <h4>Distinction for Comprehensive Exams</h4>
+          <p>Western University</p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <span class="cv-year">2025–2026</span>
+        <div>
+          <h4>CAnD3 Fellowship Award — $5,000 CAD</h4>
+          <p>Consortium on Analytics for Data-Driven Decision-Making</p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <span class="cv-year">2024 – present</span>
+        <div>
+          <h4>Western Graduate Research Scholarship — $8,788 CAD/year</h4>
+          <p>Western University</p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <span class="cv-year">2024 – present</span>
+        <div>
+          <h4>Western Graduate Teaching Assistantship — $14,000 CAD/year</h4>
+          <p>Western University</p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <span class="cv-year">2023–2024</span>
+        <div>
+          <h4>Koç University Graduate Student Grant — $11,370 CAD/year</h4>
+        </div>
+      </div>
+      <div class="cv-item">
+        <span class="cv-year">2019–2021</span>
+        <div>
+          <h4>Sabancı University Graduate Student Grant — $7,000 CAD/year</h4>
+        </div>
+      </div>
+      <div class="cv-item">
+        <span class="cv-year">2015–2019</span>
+        <div>
+          <h4>State Success Scholarship (~$22,000 total)</h4>
+          <p>Awarded to top 100 students across 2 million candidates in the Turkish National University Exams</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <p class="cv-section-title">Research Experience</p>
+      <div class="cv-item">
+        <span class="cv-year">Sep 2025 – present</span>
+        <div>
+          <h4>Research Assistant</h4>
+          <p>City of London – Anti-Racism and Anti-Oppression Division</p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <span class="cv-year">Jun 2025 – present</span>
+        <div>
+          <h4>Fellow Researcher — CAnD3</h4>
+          <p>Consortium on Analytics for Data-Driven Decision-Making<br>Project: Affordable Housing — Solutions for Equitable Access in Ontario</p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <span class="cv-year">Jan – Jul 2024</span>
+        <div>
+          <h4>Graduate Research Assistant — Koç University</h4>
+          <p>Advisor: Dr. Erdem Yörük<br>Politus ERC PoC Project — AI-based NLP/ML tools for data-driven social policymaking</p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <span class="cv-year">2020 – 2021</span>
+        <div>
+          <h4>Graduate Research Assistant — Sabancı University</h4>
+          <p>Advisor: Dr. Ateş Ali Altınordu · M.A. Thesis Project</p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <span class="cv-year">2019</span>
+        <div>
+          <h4>Research Intern — Hrant Dink Association</h4>
+          <p>Project: Media Watch on Hate Speech — data collection, textual and discourse analysis</p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <span class="cv-year">2018–2019</span>
+        <div>
+          <h4>Undergraduate Research Intern — Istanbul Policy Center (IPC)</h4>
+          <p>Projects on refugee labour integration and language education for adult refugees in Turkey</p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <span class="cv-year">2018</span>
+        <div>
+          <h4>Undergraduate Research Assistant — Boğaziçi University</h4>
+          <p>Supervisor: Dr. Mert Arslanalp · Summer Research Programme on Urban Transformation in Istanbul</p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <span class="cv-year">2017–2018</span>
+        <div>
+          <h4>Research Intern — Transparency International, Istanbul</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <p class="cv-section-title">Teaching Experience</p>
+      <div class="cv-item">
+        <span class="cv-year">2024 – present</span>
+        <div>
+          <h4>Teaching Assistant — Western University</h4>
+          <p>SOCIOLOG 1025A – Society and You<br>
+          SOCIOLOG 2166B – The Organisation and the Experience of Work<br>
+          SOCIOLOG 2205B – Statistics for Sociology</p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <span class="cv-year">2023–2024</span>
+        <div>
+          <h4>Teaching Assistant — Koç University</h4>
+          <p>SOCI 301/501 – Quantitative Research Methodology (STATA lab sessions)</p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <span class="cv-year">2019–2021</span>
+        <div>
+          <h4>Teaching Assistant — Sabancı University</h4>
+          <p>SPS 101 – Humanity and Society I · SPS 102 – Humanity and Society II</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <p class="cv-section-title">Work Experience</p>
+      <div class="cv-item">
+        <span class="cv-year">2022–2023</span>
+        <div>
+          <h4>Management Consultant — Grant Thornton, Turkey</h4>
+          <p>Partner: Dr. Aziz Murat Hatipağaoğlu</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <p class="cv-section-title">Service &amp; Extracurricular</p>
+      <div class="cv-item">
+        <span class="cv-year">2026</span>
+        <div>
+          <h4>Member, Submission Review Committee</h4>
+          <p>Western University Sociology Graduate Students Association (SGSA)</p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <span class="cv-year">2025</span>
+        <div>
+          <h4>Editor — Journal of Social Thought (JST)</h4>
+          <p>Western University · <a href="https://ojs.lib.uwo.ca/index.php/jst" target="_blank" style="color:var(--accent);">ojs.lib.uwo.ca/index.php/jst</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <p class="cv-section-title">Skills &amp; Languages</p>
+      <div class="cv-item">
+        <span class="cv-year">Software</span>
+        <div><p>STATA (advanced) · R (intermediate) · Python (intermediate) · LaTeX (advanced) · Qualtrics (advanced) · MS Office (advanced)</p></div>
+      </div>
+      <div class="cv-item">
+        <span class="cv-year">Languages</span>
+        <div><p>Turkish (native) · English (advanced) · German (intermediate)</p></div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Tuğce Kırmacı Kamber · Western University, Department of Sociology · Hosted on GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
