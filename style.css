@@ -197,6 +197,13 @@ footer {
   display: block;       /* ensures no extra inline spacing */
 }
 
+.card-container {
+  width: 400px;          /* or 80% of page */
+  overflow: hidden;      /* hides anything that spills */
+  margin: 0 auto;        /* centers container */
+}
+
+
 .image-row img {
   flex: 1;                       /* equal width for all cards */
   aspect-ratio: 1.77 / 1;        /* matches your image ratio */
