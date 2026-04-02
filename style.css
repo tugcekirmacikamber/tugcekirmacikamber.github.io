@@ -173,6 +173,16 @@ h2 {
 
 .card-link:hover { text-decoration: underline; }
 
+/* IMAGES — use .card-image on any <img> inside a card */
+.card-image {
+  display: block;        /* removes inline gap below image */
+  width: 100%;           /* fills the card width exactly */
+  height: auto;          /* preserves original proportions */
+  border-radius: 6px;    /* slightly rounded corners */
+  border: 1px solid var(--border);
+  margin: 1rem 0 1.25rem;
+}
+
 /* FOOTER */
 footer {
   text-align: center;
@@ -187,30 +197,4 @@ footer {
 @media (max-width: 680px) {
   .nav-links { gap: 1rem; }
   .nav-links a { font-size: 0.72rem; }
-}
-
-.card-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin: 10px 0;
-  display: block;       /* ensures no extra inline spacing */
-}
-
-.card-container {
-  width: 400px;          /* or 80% of page */
-  overflow: hidden;      /* hides anything that spills */
-  margin: 0 auto;        /* centers container */
-}
-
-
-.image-row img {
-  flex: 1;                       /* equal width for all cards */
-  aspect-ratio: 1.77 / 1;        /* matches your image ratio */
-  width: 400px;                   /* choose desired width */
-  height: auto;                   /* height adjusts automatically */
-  object-fit: cover;              /* fills card nicely */
-  border-radius: 12px;
-  border: 1px solid #ddd;
-  background: #fff;
 }
