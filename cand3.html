@@ -9,13 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <style>
-    .page-intro {
-      font-size: 1rem;
-      color: var(--muted);
-      line-height: 1.8;
-      margin-bottom: 2.5rem;
-      max-width: 620px;
-    }
     .cand3-badge {
       display: inline-block;
       font-size: 0.7rem;
@@ -41,10 +34,14 @@
       font-family: 'Lora', serif;
       font-size: 1.1rem;
       font-weight: 400;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
       line-height: 1.4;
     }
-    .cand3-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.7; }
+    .cand3-card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
     .cand3-about {
       background: var(--accent-light);
       border-radius: 8px;
@@ -55,6 +52,21 @@
       line-height: 1.7;
     }
     .cand3-about a { color: var(--accent); font-weight: 500; }
+    .authors {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    /* IMAGE STYLING — contained, sharp, never floating */
+    .card-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      margin: 1rem 0 1.25rem;
+    }
   </style>
 </head>
 <body>
@@ -76,56 +88,45 @@
 
     <div class="cand3-about">
       <strong>About CAnD3:</strong> The Consortium on Analytics for Data-Driven Decision-Making (CAnD3) is a Canadian training initiative that prepares researchers to use data science for social good. As a CAnD3 Fellow (2025–2026), I contribute to applied policy research bridging academic sociology and data-driven decision-making.
-      Learn more at <a href="https://www.mcgill.ca/cand3/" target="_blank">cand3</a>.       
-    </div>
-    
-  <div class="cand3-about">
-     Through CAnD3 program, I am (1) building clearer, more engaging strategies for conveying complex research to diverse audiences, (2) strengthening my ability to turn quantitative insights into intuitive, impactful visual representations, (3) developing practical skills for connecting scientific evidence to policy decision-making, (4) expanding my professional network and generate new ideas through interdisciplinary exchange.  Below are some deliverables from the project.
-    
+      Learn more at <a href="https://www.mcgill.ca/cand3/" target="_blank">cand3</a>.
+      Through the CAnD3 program, I am (1) building clearer, more engaging strategies for conveying complex research to diverse audiences, (2) strengthening my ability to turn quantitative insights into intuitive, impactful visual representations, (3) developing practical skills for connecting scientific evidence to policy decision-making, (4) expanding my professional network and generating new ideas through interdisciplinary exchange. Below are some deliverables from the project.
     </div>
 
     <div class="cand3-card">
       <span class="cand3-badge">Data Visualisation · 2025</span>
-      <h3>Mental Health Inequalities in Times of Social Upheaval (Leah Houseman and Tuğce Kırmacı Kamber) </h3>
-        <img src="CAnD3-datavisualisation.png" alt="CanD3 Data Visualisation" class="card-image">
-      <p>
-Our analysis investigated how patterns of self-reported poor mental health days changed among Americans
-between 2002 and 2022, across gender and age groups. We further explored whether defining national events (the 2008 financial crisis, 2016 Elections as a point of heightened political polarization, the COVID-19 pandemic) correspond with shifts in mental health patterns.</p>
-    </div>
-    
-    <div class="cand3-card">
-      <span class="cand3-badge">Briefing Note · 2026</span>
-      <h3>Affordable Housing: Solutions for Equitable Access in Ontario (Beren Crim Sabuncu, Jiawen Li, Tuğce Kırmacı Kamber, and Valeriia Yakushko)</h3>
-       <div class="card-image">
-    <img src="cand3-briefingnote2.png">
-  </div>
-      <p>
-        This briefing note examines Ontario's affordable housing crisis through the lens of equity and social policy. Drawing on quantitative data and policy analysis, it identifies structural barriers to housing access and outlines actionable recommendations for expanding equitable housing across urban and suburban communities in Ontario.
-      </p>
-      <!-- When your briefing note is published, add a link below:
-      <a class="card-link" href="LINK_HERE" target="_blank">Read briefing note →</a> -->
+      <h3>Mental Health Inequalities in Times of Social Upheaval</h3>
+      <p class="authors">Leah Houseman and Tuğce Kırmacı Kamber</p>
+      <img src="CAnD3-datavisualisation.png" alt="Mental Health Inequalities Data Visualisation" class="card-image" />
+      <p>Our analysis investigated how patterns of self-reported poor mental health days changed among Americans between 2002 and 2022, across gender and age groups. We further explored whether defining national events — the 2008 financial crisis, the 2016 elections as a point of heightened political polarization, and the COVID-19 pandemic — correspond with shifts in mental health patterns.</p>
     </div>
 
-    <!-- To add more CAnD3 projects, copy the block below and fill it in:
+    <div class="cand3-card">
+      <span class="cand3-badge">Briefing Note · 2026</span>
+      <h3>Affordable Housing: Solutions for Equitable Access in Ontario</h3>
+      <p class="authors">Beren Crim Sabuncu, Jiawen Li, Tuğce Kırmacı Kamber, and Valeriia Yakushko</p>
+      <img src="cand3-briefingnote2.png" alt="Affordable Housing Briefing Note" class="card-image" />
+      <p>This briefing note examines Ontario's affordable housing crisis through the lens of equity and social policy. Drawing on quantitative data and policy analysis, it identifies structural barriers to housing access and outlines actionable recommendations for expanding equitable housing across urban and suburban communities in Ontario.</p>
+    </div>
+
+    <div class="cand3-card">
+      <span class="cand3-badge">Data Visualisation · 2025</span>
+      <h3>Inequalities in Housing Conditions</h3>
+      <p class="authors">Beren Crim Sabuncu, Jiawen Li, Tuğce Kırmacı Kamber, and Valeriia Yakushko</p>
+      <img src="cand3-housingresearch.png" alt="Inequalities in Housing Conditions" class="card-image" />
+      <p>Our analysis investigated hidden housing risks in quality housing with a focus on marital status and parenthood. We found that being a single man and being single with children are strong predictors for living in a dwelling that needs repair.</p>
+    </div>
+
+    <!-- To add more CAnD3 projects, copy this block:
 
     <div class="cand3-card">
       <span class="cand3-badge">Type · Year</span>
       <h3>Project Title</h3>
+      <p class="authors">Author names</p>
+      <img src="your-image.png" alt="Description" class="card-image" />
       <p>Project description here.</p>
-      <a class="card-link" href="#" target="_blank">Read more →</a>
     </div>
 
     -->
-
-  <div class="cand3-card">
-      <span class="cand3-badge">Data Visualisation · 2025</span>
-      <h3> Inequalities in Housing Conditions (Beren Crim Sabuncu, Jiawen Li, Tuğce Kırmacı Kamber, and Valeriia Yakushko) </h3>
-        <img src="cand3-housingresearch.png" class="card-image">
-      <p> Our analysis investigated hidden housing risks in quality housing with a focus on marital status and parenthood. We found that being a single man and being single with children are strong predictors for living in a dwelling that needs repair.</p>
-    </div>
-
-
-    
 
   </main>
 
