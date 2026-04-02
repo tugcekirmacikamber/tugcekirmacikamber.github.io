@@ -37,28 +37,89 @@
       margin-bottom: 0.75rem;
       line-height: 1.4;
     }
-    .cand3-card p {
-      font-size: 0.9rem;
-      color: var(--muted);
-      line-height: 1.7;
-    }
+    .cand3-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.7; }
+    .authors { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.75rem; }
+
+    /* ABOUT CAND3 BOX */
     .cand3-about {
       background: var(--accent-light);
       border-radius: 8px;
       padding: 1.5rem;
-      margin-bottom: 2.5rem;
+      margin-bottom: 1.5rem;
       font-size: 0.88rem;
       color: var(--accent);
       line-height: 1.7;
     }
     .cand3-about a { color: var(--accent); font-weight: 500; }
-    .authors {
-      font-size: 0.8rem;
+
+    /* GOALS SECTION */
+    .goals-label {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+    .goals-title {
+      font-family: 'Lora', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-bottom: 1.25rem;
+      color: var(--ink);
+    }
+    .goals-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+    .goal-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      transition: border-color 0.2s;
+    }
+    .goal-card:hover { border-color: var(--accent); }
+    .goal-number {
+      font-family: 'Lora', serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--accent);
+      opacity: 0.4;
+      line-height: 1;
+      flex-shrink: 0;
+      padding-top: 2px;
+    }
+    .goal-card p {
+      font-size: 0.88rem;
       color: var(--muted);
-      margin-bottom: 0.75rem;
+      line-height: 1.6;
     }
 
-    /* IMAGE STYLING — contained, sharp, never floating */
+    /* PROJECTS LABEL */
+    .projects-label {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .projects-title {
+      font-family: 'Lora', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+      color: var(--ink);
+    }
+
+    /* IMAGE STYLING */
     .card-image {
       display: block;
       width: 100%;
@@ -66,6 +127,10 @@
       border-radius: 6px;
       border: 1px solid var(--border);
       margin: 1rem 0 1.25rem;
+    }
+
+    @media (max-width: 680px) {
+      .goals-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -84,13 +149,39 @@
 
   <main class="page">
     <p class="section-label">Fellowship</p>
-    <h1 class="page-title">CAnD3 Projects</h1>
+    <h1 class="page-title">CAnD3</h1>
 
+    <!-- ABOUT CAND3 -->
     <div class="cand3-about">
       <strong>About CAnD3:</strong> The Consortium on Analytics for Data-Driven Decision-Making (CAnD3) is a Canadian training initiative that prepares researchers to use data science for social good. As a CAnD3 Fellow (2025–2026), I contribute to applied policy research bridging academic sociology and data-driven decision-making.
-      Learn more at <a href="https://www.mcgill.ca/cand3/" target="_blank">cand3</a>.
-      Through the CAnD3 program, I am (1) building clearer, more engaging strategies for conveying complex research to diverse audiences, (2) strengthening my ability to turn quantitative insights into intuitive, impactful visual representations, (3) developing practical skills for connecting scientific evidence to policy decision-making, (4) expanding my professional network and generating new ideas through interdisciplinary exchange. Below are some deliverables from the project.
+      Learn more at <a href="https://www.mcgill.ca/cand3/" target="_blank">cand3.ca</a>.
     </div>
+
+    <!-- MY CAND3 GOALS -->
+    <p class="goals-label">My CAnD3 Goals</p>
+    <h2 class="goals-title">What I am building through this fellowship</h2>
+    <div class="goals-grid">
+      <div class="goal-card">
+        <span class="goal-number">1</span>
+        <p>Building clearer, more engaging strategies for conveying complex research to diverse audiences</p>
+      </div>
+      <div class="goal-card">
+        <span class="goal-number">2</span>
+        <p>Strengthening my ability to turn quantitative insights into intuitive, impactful visual representations</p>
+      </div>
+      <div class="goal-card">
+        <span class="goal-number">3</span>
+        <p>Developing practical skills for connecting scientific evidence to policy decision-making</p>
+      </div>
+      <div class="goal-card">
+        <span class="goal-number">4</span>
+        <p>Expanding my professional network and generating new ideas through interdisciplinary exchange</p>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <p class="projects-label">Deliverables</p>
+    <h2 class="projects-title">CAnD3 Projects</h2>
 
     <div class="cand3-card">
       <span class="cand3-badge">Data Visualisation · 2025</span>
