@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inequalities in Housing Conditions · Tuğce Kırmacı Kamber</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      margin-bottom: 1.5rem;
+    }
+    .back-link:hover { color: var(--accent); }
+
+    .talk-meta { font-size: 0.95rem; color: var(--muted); margin-bottom: 1.5rem; }
+    .talk-intro {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #3a3732;
+      margin-bottom: 1.5rem;
+      max-width: 680px;
+    }
+    .talk-intro strong { color: var(--ink); font-weight: 500; }
+    .talk-buttons { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 3rem; }
+
+    .slides { display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 3rem; }
+    .slide-img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .references {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .references h2 {
+      font-family: 'Lora', serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+    .references p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 0.75rem;
+    }
+    .references p:last-child { margin-bottom: 0; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-name" href="index.html">Tuğce Kırmacı Kamber</a>
+    <ul class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="cand3.html" class="active">CAnD3</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <a class="back-link" href="cand3.html">← Back to CAnD3</a>
+
+    <p class="section-label">Data Visualisation · CAnD3</p>
+    <h1 class="page-title">Inequalities in Housing Conditions</h1>
+    <p class="talk-meta">Who lives in high-quality housing? Inequalities across intersected social groups</p>
+
+    <div class="talk-intro">
+      <p style="margin-bottom: 1.25rem;">
+        <strong>Authors.</strong> Valeriia Yakushko, Beren Crim Sabuncu, Tuğce Kırmacı Kamber, and Jiawen Li (Group 5).
+      </p>
+      <p style="margin-bottom: 1.25rem;">
+        <strong>Background.</strong> Housing risk is often hidden. Access to quality housing is stratified by race, immigrant status, and other social locations (Hulchanski, 2007; Swope &amp; Hernandez, 2019), and the most invisible risk lies at the intersection of these locations. Family characteristics matter too: marital status and parenthood have become increasingly consequential indicators of social inequality (McLanahan &amp; Percheski, 2008), shaping household income, economic mobility, and family formation. Housing quality — encompassing both housing condition and affordability (OECD, 2021) — has wide-ranging effects on health (Chapman et al., 2023), wellbeing (Riva et al., 2022; Clapham, 2018), and economic mobility (Ramakrishnan, 2021).
+      </p>
+      <p style="margin-bottom: 1.25rem;">
+        <strong>Findings.</strong> Drawing on the Socioeconomic–Mortality Linked Synthetic Dataset (February 2021) and binary logistic regression — restricted to individuals aged 18–65 and controlling for income, education, and minority status — we found two striking patterns. About 2 in 5 single men live in a dwelling needing repair, and nearly 2 in 5 single parents do as well. Being a single man, or being single with children, are strong predictors of living in a dwelling that needs repair.
+      </p>
+      <p>
+        <strong>Policy implications.</strong> For single-parent households, we recommend prioritizing direct repair funding for urgent health and safety risks and providing hands-on navigation support to ensure repairs actually happen. For single men, we recommend expanding rapid, low-barrier repair assistance (no credit checks, minimal paperwork) and enforcing landlord accountability in substandard rental housing. The broader takeaway: housing policy must move beyond access toward maintenance equity — safe, livable housing is an ongoing right, not a one-time provision.
+      </p>
+    </div>
+
+    <div class="talk-buttons">
+      <a class="btn" href="housing-conditions-slides.pdf" target="_blank">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Slides (PDF)
+      </a>
+    </div>
+
+    <div class="slides">
+      <img src="housing-slide-1.png" alt="Slide 1: Who lives in high-quality housing? — title" class="slide-img" />
+      <img src="housing-slide-2.png" alt="Slide 2: Background" class="slide-img" />
+      <img src="housing-slide-3.png" alt="Slide 3: Findings on dwellings needing repair" class="slide-img" />
+      <img src="housing-slide-4.png" alt="Slide 4: Policy implications" class="slide-img" />
+      <img src="housing-slide-5.png" alt="Slide 5: Thank you" class="slide-img" />
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Tuğce Kırmacı Kamber · Western University, Department of Sociology · Hosted on GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
