@@ -35,6 +35,7 @@
       margin-bottom: 1.5rem;
       max-width: 680px;
     }
+    .talk-intro strong { color: var(--ink); font-weight: 500; }
     .talk-buttons { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 3rem; }
 
     /* SLIDE IMAGES */
@@ -47,31 +48,27 @@
       border: 1px solid var(--border);
     }
 
-    /* REFLECTION */
-    .reflection {
+    /* REFERENCES */
+    .references {
       background: #fff;
       border: 1px solid var(--border);
       border-radius: 8px;
       padding: 1.75rem;
       margin-bottom: 1.5rem;
     }
-    .reflection h2 {
+    .references h2 {
       font-family: 'Lora', serif;
       font-size: 1.2rem;
       font-weight: 400;
       margin-bottom: 1rem;
     }
-    .reflection-row { margin-bottom: 1rem; }
-    .reflection-row:last-child { margin-bottom: 0; }
-    .reflection-label {
-      font-size: 0.7rem;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 0.25rem;
+    .references p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 0.75rem;
     }
-    .reflection-row p { font-size: 0.92rem; color: var(--muted); line-height: 1.7; }
+    .references p:last-child { margin-bottom: 0; }
   </style>
 </head>
 <body>
@@ -94,9 +91,20 @@
     <h1 class="page-title">From Consensus to Divergence</h1>
     <p class="talk-meta">Generational shifts in civic tolerance · United States, 1972–2024</p>
 
-    <p class="talk-intro">
-      This presentation, delivered as part of the CAnD3 Dragon's Den, uses the U.S. General Social Survey (1972–2024) to trace how civic tolerance has shifted across generations — from the Greatest Generation through Gen Z. It shows that while older cohorts grew more tolerant of communists, racists, and militarists alike, younger cohorts increasingly filter free-speech tolerance through the potential harm of that speech to marginalized communities — a move toward what I call "multicultural tolerance."
-    </p>
+    <div class="talk-intro">
+      <p style="margin-bottom: 1.25rem;">
+        <strong>Background.</strong> Tolerance for the exercise of civil liberties — freedom of speech, for instance — is a democratic institution, often used to measure acceptance of pluralism in the United States. The U.S. is distinctive among democracies in that acceptable speech is far less regulated (Boch, 2020). Conventional measures of political tolerance tend to assume that all forms of speech are equally legitimate (or illegitimate), which would lead us to expect broadly rising tolerance toward both far-left and far-right ideologies. Yet a third category of tolerance is on the rise — <em>multicultural tolerance</em> (Harell, 2010) — which prioritizes norms of equality over norms of freedom (Chong, Citrin &amp; Levy, 2024) and differentiates speech based on its potential harm to historically marginalized communities, including BIPOC communities and sexual minorities. I track public attitudes toward civil liberties in the U.S. to test whether this argument holds across generations.
+      </p>
+      <p style="margin-bottom: 1.25rem;">
+        <strong>Data &amp; Methods.</strong> The U.S. General Social Survey (1972–2024) includes a civil-liberties battery asking respondents whether they would allow members of politically fringe groups to give a public speech, to teach in a school, and to have a book in the public library. I focus on groups strongly identified with the far-left or far-right — communists, racists, and militarists. Using logistic regression, I estimate the predicted probability of tolerance toward each group across the three questions, net of race, gender, education, and political affiliation.
+      </p>
+      <p style="margin-bottom: 1.25rem;">
+        <strong>Results.</strong> The first graph shows the changing windows of tolerance toward communists, racists, and militarists. From the Greatest Generation to the Baby Boomers, overall tolerance rises but shows little divergence between groups — though tolerance for racists begins to decline in the 2010s. The second graph tells the story of divergence: while tolerance toward militarists and communists stays high, tolerance of racists is markedly lower among younger generations. Gen Z shows the lowest tolerance toward racists, supporting the thesis that politically fringe ideals are now filtered through the lens of multicultural tolerance — creating a gap that did not exist for older generations.
+      </p>
+      <p>
+        <strong>Implications.</strong> Cohort replacement may signal future shifts in norms and in divergent support for pro-civil-liberties policies. Gibson (2013) finds that such support is itself divided: strong rejection of racial profiling and strong backing for free protest coexist with strong support for surveillance when deemed necessary (wiretapping, email monitoring) and for requiring teachers to promote loyalty to the U.S. Future work should map the bounds of this selective approach among younger cohorts and how it shapes support for different civil-liberties policies.
+      </p>
+    </div>
 
     <div class="talk-buttons">
       <a class="btn" href="civic-tolerance-slides.pdf" target="_blank">
@@ -110,6 +118,15 @@
       <img src="civic-tolerance-slide-1.png" alt="Slide 1: From Consensus to Divergence — title and framework" class="slide-img" />
       <img src="civic-tolerance-slide-2.png" alt="Slide 2: Older cohorts — tolerance rose across the board" class="slide-img" />
       <img src="civic-tolerance-slide-3.png" alt="Slide 3: Younger cohorts — tolerance splits" class="slide-img" />
+    </div>
+
+    <!-- REFERENCES -->
+    <div class="references">
+      <h2>References</h2>
+      <p>Boch, A. (2020). Increasing American Political Tolerance: A Framework Excluding Hate Speech. <em>Socius: Sociological Research for a Dynamic World</em>, 6.</p>
+      <p>Chong, D., Citrin, J., &amp; Levy, M. (2024). The Realignment of Political Tolerance in the United States. <em>Perspectives on Politics</em>, 22(1), 131–152.</p>
+      <p>Gibson, J. L. (2013). Measuring Political Tolerance and General Support for Pro–Civil Liberties Policies. <em>Public Opinion Quarterly</em>, 77(S1), 45–68.</p>
+      <p>Harell, A. (2010). The Limits of Tolerance in Diverse Societies: Hate Speech and Political Tolerance Norms Among Youth. <em>Canadian Journal of Political Science</em>, 43(2), 407–432.</p>
     </div>
 
   </main>
