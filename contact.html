@@ -29,6 +29,20 @@
     .contact-list a { font-size: 0.9rem; color: var(--ink); text-decoration: none; }
     .contact-list a:hover { color: var(--accent); }
     .contact-list span.label { font-size: 0.9rem; color: var(--ink); }
+
+    /* FEEDBACK NOTE */
+    .feedback-note {
+      background: var(--accent-light);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-top: 2.5rem;
+      font-size: 0.95rem;
+      color: var(--accent);
+      line-height: 1.8;
+      max-width: 720px;
+    }
+    .feedback-note strong { font-weight: 500; }
+
     @media (max-width: 680px) {
       .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
     }
@@ -72,10 +86,17 @@
           <span class="contact-icon">
             <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </span>
-          <a href="https://www.linkedin.com/in/tugcekirmacikamber" target="_blank">LinkedIn</a>
+          <!-- LINKEDIN -->
+          <a href="https://www.linkedin.com/in/tu%C4%9F%C3%A7e-k%C4%B1rmac%C4%B1-kamber-12a032148/" target="_blank">LinkedIn</a>
         </li>
       </ul>
     </div>
+
+    <!-- FEEDBACK INVITATION -->
+    <div class="feedback-note">
+      <strong>I'd love your thoughts.</strong> If you've looked through my work, I'm always glad to hear feedback — especially on how I present my research to different audiences, or where you'd like to see more. Feel free to drop me a line at <a href="mailto:tkirmaci@uwo.ca" style="color:var(--accent); font-weight:500;">tkirmaci@uwo.ca</a>.
+    </div>
+
   </main>
 
   <footer>
