@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mental Health Inequalities · Tuğce Kırmacı Kamber</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      margin-bottom: 1.5rem;
+    }
+    .back-link:hover { color: var(--accent); }
+
+    .talk-meta { font-size: 0.95rem; color: var(--muted); margin-bottom: 1.5rem; }
+    .talk-intro {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #3a3732;
+      margin-bottom: 1.5rem;
+      max-width: 680px;
+    }
+    .talk-intro strong { color: var(--ink); font-weight: 500; }
+    .talk-buttons { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 3rem; }
+
+    .slides { display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 3rem; }
+    .slide-img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-name" href="index.html">Tuğce Kırmacı Kamber</a>
+    <ul class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="cand3.html" class="active">CAnD3</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <a class="back-link" href="cand3.html">← Back to CAnD3</a>
+
+    <p class="section-label">Data Visualisation · CAnD3</p>
+    <h1 class="page-title">Mental Health Inequalities in Times of Social Upheaval</h1>
+    <p class="talk-meta">Americans by age group and gender, 2002–2022</p>
+
+    <div class="talk-intro">
+      <p style="margin-bottom: 1.25rem;">
+        <strong>Authors.</strong> Leah Houseman, MA and Tuğce Kırmacı Kamber, MA.
+      </p>
+      <p style="margin-bottom: 1.25rem;">
+        <strong>Background.</strong> Mental health has become a barometer of societal well-being, shaping labour productivity, healthcare costs, and family stability. Persistent disparities across gender and age groups reveal how social structures, life-course transitions, and role expectations distribute psychological strain unevenly (Yu, 2018; Moen, 2022). Exogenous shocks — political, economic, and health crises — intensify that strain and have compounding effects on some groups. Women, for example, bore a disproportionate mental health burden during the COVID-19 pandemic (Arilha et al., 2024), while younger adults experience heightened anxiety tied to economic precarity and social instability (Vancea &amp; Utzet, 2017).
+      </p>
+      <p style="margin-bottom: 1.25rem;">
+        <strong>Data &amp; Methods.</strong> Using the American General Social Survey (2002–2022), we analysed trends in the average number of self-reported poor mental health days per month, by survey year. We stratified results by gender and age cohort, constructing time-series visualizations to identify both long-term trends and event-linked fluctuations around the 2008 financial crisis, the 2016 election, and the COVID-19 pandemic.
+      </p>
+      <p style="margin-bottom: 1.25rem;">
+        <strong>Key findings.</strong> Three major patterns emerged. First, women at all times and across all ages report more poor mental health days than men. Second, major crises have a compounding effect on the gender gap in self-reported mental health days. Third, there is a sharp rise in reported poor mental health days for younger women (18–34) beginning in the late 2010s and intensifying with COVID-19.
+      </p>
+      <p>
+        <strong>Implications.</strong> These findings underscore the interplay between political-economic conditions and mental health. Structural shocks — whether economic recessions or heightened political polarization — reveal how uncertainty translates into individual psychological distress. Policymakers should view mental health not only as a clinical or individual concern but as a sensitive indicator of social stability and inequality. Without structural responses such as more equitable labour protections and gender-sensitive social policy, each new crisis risks deepening the uneven psychological toll of social uncertainty.
+      </p>
+    </div>
+
+    <div class="talk-buttons">
+      <a class="btn" href="mental-health-slides.pdf" target="_blank">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Slides (PDF)
+      </a>
+    </div>
+
+    <div class="slides">
+      <img src="mental-health-slide-1.png" alt="Slide 1: Mental Health Inequalities in Times of Social Upheaval — title" class="slide-img" />
+      <img src="mental-health-slide-2.png" alt="Slide 2: Research questions" class="slide-img" />
+      <img src="mental-health-slide-3.png" alt="Slide 3: Findings and time-series visualization" class="slide-img" />
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Tuğce Kırmacı Kamber · Western University, Department of Sociology · Hosted on GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
